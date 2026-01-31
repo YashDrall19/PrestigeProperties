@@ -1,4 +1,24 @@
 export default function Footer() {
+  const openEmail = () => {
+    const email = "kamal@prestige-properties.co";
+    const subject = "Real Estate Inquiry";
+    const body = "Hello,\n\nI am interested in your real estate services.";
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+    } else {
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+        email
+      )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.open(gmailUrl, "_blank");
+    }
+  };
+
   return (
     <footer className="site-footer">
       <div className="footer-content">
@@ -25,10 +45,30 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-section">
-          <h5>Contact</h5>
-          <p>Email: info@prestige-properties.co</p>
-          <p>Phone: +91 (800) 123-4567</p>
-        </div>
+        <h5>Contact</h5>
+        <p>
+          Email:{" "}
+          <span
+            className="app-link"
+            onClick={openEmail}
+            role="button"
+            tabIndex={0}
+          >
+            kamal@prestige-properties.co
+          </span>
+        </p>
+
+        <p>
+          Phone:{" "}
+          <a
+            href="tel:+919911331082"
+            className="app-link"
+          >
+            +91 9911331082
+          </a>
+        </p>
+      </div>
+
       </div>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Prestige Properties. All rights reserved. | prestige-properties.co</p>

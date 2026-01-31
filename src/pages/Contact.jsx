@@ -90,7 +90,7 @@ export default function Contact(){
                 </div>
 
                 {/* Phone and Country Code */}
-                <div className="form-group-row">
+                {/* <div className="form-group-row"> */}
                   <div className="form-group">
                     <label htmlFor="countryCode">Country Code *</label>
                     <select 
@@ -111,7 +111,7 @@ export default function Contact(){
                   <div className="form-group">
                     <label htmlFor="phone">Phone Number *</label>
                     <div className="phone-input-wrapper">
-                      <span className="country-code">{formData.countryCode}</span>
+                      {/* <span className="country-code">{formData.countryCode}</span> */}
                       <input 
                         type="tel" 
                         id="phone"
@@ -124,7 +124,7 @@ export default function Contact(){
                       />
                     </div>
                   </div>
-                </div>
+                {/* </div> */}
 
                 {/* Interest Dropdown */}
                 <div className="form-group">
@@ -196,11 +196,11 @@ export default function Contact(){
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">📧 Email:</span>
-                  <p>info@prestige-properties.co</p>
+                  <p>kamal@prestige-properties.co</p>
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">📞 Phone:</span>
-                  <p>+91 (800) 123-4567</p>
+                  <p>+91 9911331082</p>
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">🕐 Hours:</span>
