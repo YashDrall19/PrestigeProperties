@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
 
@@ -103,8 +104,8 @@ export default function Services(){
           <h2>Ready to Get Started?</h2>
           <p>Contact our team to discuss your real estate and lifestyle needs</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn primary">Book Consultation</button>
-            <button className="btn ghost-outline">Contact Us</button>
+            <Link to="/contact" className="btn primary">Book Consultation</Link>
+            <Link to="/contact" className="btn ghost-outline">Contact Us</Link>
           </div>
         </motion.section>
       </ScrollReveal>

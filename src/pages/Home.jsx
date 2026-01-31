@@ -38,7 +38,6 @@ export default function Home() {
           <p>Discover premium commercial and residential properties across India. Build wealth through smart, curated real estate investments with transparent returns and expert guidance.</p>
           <div className="hero-ctas">
             <button className="btn ghost-outline">Browse Properties</button>
-            <button className="btn primary">Get Started</button>
           </div>
         </div>
         <div className="hero-image img-placeholder" aria-hidden="true">
