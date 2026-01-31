@@ -12,9 +12,9 @@ export default function Header({ onMenu }) {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
-        {/* <div className="header-ctas">
+        <div className="header-ctas">
           <button className="btn primary">Get Started</button>
-        </div> */}
+        </div>
       </div>
     </header>
   )
