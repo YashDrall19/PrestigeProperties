@@ -62,7 +62,7 @@ export default function Home() {
       </motion.section>
 
       {/* Stats Section */}
-      <ScrollReveal>
+      {/* <ScrollReveal>
         <motion.section 
           className="stats-section"
           variants={containerVariants}
@@ -82,16 +82,12 @@ export default function Home() {
             </motion.div>
           ))}
         </motion.section>
-      </ScrollReveal>
+      </ScrollReveal> */}
 
       {/* Investment Card Section */}
       <ScrollReveal delay={0.1}>
         <section className="investment-card-section">
-          <div className="investment-left">
-            <h2>Why Choose Prestige Properties?</h2>
-            <p>We specialize in curating premium real estate investments across commercial and residential sectors. Our properties are strategically located in high-growth regions with proven appreciation potential.</p>
-            <button className="btn primary">Explore Properties</button>
-          </div>
+          
           <div className="investment-right">
             <div className="card property-card-featured">
               <div className="card-label">Featured</div>
@@ -117,6 +113,10 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="investment-left">
+            <h2>Why Choose Prestige Properties?</h2>
+            <p>We specialize in curating premium real estate investments across commercial and residential sectors. Our properties are strategically located in high-growth regions with proven appreciation potential.</p>
           </div>
         </section>
       </ScrollReveal>
@@ -170,13 +170,12 @@ export default function Home() {
                 <div className="card-body">
                   <h3>{p.title}</h3>
                   <p className="muted">{p.location}</p>
-                  <div className="property-price-row">
+                  {/* <div className="property-price-row">
                     <span className="price">{p.price}</span>
                     <span className="roi">{p.roi}</span>
-                  </div>
+                  </div> */}
                   <div className="card-actions">
                     <Link to={`/properties/${p.id}`} className="btn primary small">View</Link>
-                    <button className="btn ghost small">Enquire</button>
                   </div>
                 </div>
               </motion.article>

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
+import { useEffect } from 'react'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -23,8 +24,16 @@ const itemVariants = {
 }
 
 export default function Services(){
+
+  useEffect(() => {
+    const section = document.getElementById("section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
-    <section className="page services">
+    <section className="page services" id='section'>
       {/* Hero Section */}
       <motion.div 
         className="services-hero"
@@ -52,7 +61,7 @@ export default function Services(){
               <p className="service-desc">{service.description}</p>
               <ul className="service-features">
                 {service.details.slice(0, 3).map((detail, idx) => (
-                  <li key={idx}>✓ {detail}</li>
+                  <li key={idx}> {detail}</li>
                 ))}
               </ul>
               <button className="btn primary small">Learn More</button>
@@ -73,7 +82,9 @@ export default function Services(){
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="detail-icon">{service.icon}</div>
+              <div className="detail-icon">
+                <img src={service.image} alt="" />
+              </div>
               <div className="detail-content">
                 <h2>{service.title}</h2>
                 <p className="detail-desc">{service.fullDescription}</p>
@@ -105,7 +116,6 @@ export default function Services(){
           <p>Contact our team to discuss your real estate and lifestyle needs</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn primary">Book Consultation</Link>
-            <Link to="/contact" className="btn ghost-outline">Contact Us</Link>
           </div>
         </motion.section>
       </ScrollReveal>

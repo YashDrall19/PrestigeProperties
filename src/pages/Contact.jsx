@@ -1,10 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { countries } from '../data/countries'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
 
 export default function Contact(){
+
+  useEffect(() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -47,7 +55,7 @@ export default function Contact(){
   }
 
   return (
-    <section className="page contact">
+    <section className="page contact" id='contact'>
       {/* Hero Section */}
       <motion.div 
         className="contact-hero"

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import properties from '../data/properties'
 import QuickViewModal from '../components/QuickViewModal'
@@ -6,8 +6,15 @@ import QuickViewModal from '../components/QuickViewModal'
 export default function Properties(){
   const [quick, setQuick] = useState({open:false, prop:null})
 
+  useEffect(() => {
+      const section = document.getElementById("property");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, []);
+
   return (
-    <section className="page properties">
+    <section className="page properties" id='property'>
       <h1>Properties</h1>
       {/* <div className="filter-bar">
         <input placeholder="Search by city, locality or id" />

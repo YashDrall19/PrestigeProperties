@@ -1,8 +1,15 @@
+import { image } from "framer-motion/client";
+import buysell from "../assets/static/BuySell.png";
+import interior from "../assets/static/HomeInterior.jpg";
+import homeloan from "../assets/static/HomeLoan.jpg";
+import vastu from "../assets/static/Vastu.webp";
+
 export const services = [
   {
     id: 1,
     title: 'Real Estate Buy & Sell',
     icon: '🏠',
+    image: buysell,
     description: 'Comprehensive real estate solutions for buying and selling properties',
     details: [
       'Property valuation and market analysis',
@@ -18,6 +25,7 @@ export const services = [
     id: 2,
     title: 'Vastu Astrology',
     icon: '🧿',
+    image: vastu,
     description: 'Expert Vastu consultation for residential and commercial properties',
     details: [
       'Vastu analysis of existing properties',
@@ -33,6 +41,7 @@ export const services = [
     id: 3,
     title: 'Home Interior Design',
     icon: '🎨',
+    image: interior,
     description: 'Professional interior design services for modern living spaces',
     details: [
       'Space planning and layout design',
@@ -48,6 +57,7 @@ export const services = [
     id: 4,
     title: 'Home Loan Assistance',
     icon: '💳',
+    image: homeloan,
     description: 'Expert guidance for home loan processing and approvals',
     details: [
       'Loan eligibility assessment',
@@ -59,4 +69,4 @@ export const services = [
     ],
     fullDescription: 'Simplify your home loan journey with our expert assistance. We help you navigate the lending process, secure the best rates, and expedite approvals so you can focus on your new home.'
   }
-]
+];

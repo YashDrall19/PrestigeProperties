@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import properties from '../data/properties'
+import { useEffect } from 'react'
 
 export default function PropertyDetail(){
   const { id } = useParams()
@@ -11,8 +12,15 @@ export default function PropertyDetail(){
     </section>
   )
 
+  useEffect(() => {
+    const section = document.getElementById("property");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
-    <section className="page property-detail">
+    <section className="page property-detail" id='property'>
       <h1>{p.title}</h1>
       <div className="section two-cols">
         <div>

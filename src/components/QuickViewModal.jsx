@@ -10,7 +10,9 @@ export default function QuickViewModal({ open, onClose, property }){
           <button onClick={onClose}>✕</button>
         </div>
         <div className="modal-body">
-          <div className="img-placeholder" style={{height:180}}></div>
+          <div className="img-placeholder">
+            <img src={property.img} alt="N/A" />
+          </div>
           <p className="muted">{property.location} • {property.size}</p>
           <p><strong>{property.price}</strong></p>
           <p>Bedrooms: {property.beds} • Bathrooms: {property.baths}</p>

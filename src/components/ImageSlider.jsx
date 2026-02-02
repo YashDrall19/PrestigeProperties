@@ -98,7 +98,7 @@ export default function ImageSlider({ images }) {
           exit="exit"
           transition={{
             x: { type: 'spring', stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 },
+            opacity: { duration: 0.05 },
           }}
           className="slider-image"
         />
