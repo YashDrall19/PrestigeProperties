@@ -22,7 +22,9 @@ export default function Properties(){
       <div className="cards-grid">
         {properties.map((p)=> (
           <article className="card" key={p.id}>
-            <div className="img-placeholder card-image"></div>
+            <div className="img-placeholder card-image">
+              <img src={p.img} alt="N/A" />
+            </div>
             <div className="card-body">
               <h3>{p.title}</h3>
               <p className="muted">{p.beds} bed • {p.baths} bath • {p.size}</p>

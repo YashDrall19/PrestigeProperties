@@ -3,6 +3,13 @@ import { motion } from 'framer-motion'
 import properties from '../data/properties'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
+import ImageSlider from '../components/ImageSlider'
+import BhuAst from '../assets/sites/BhuAst.jpeg'
+import BhuCityCen from '../assets/sites/BhuCityCen32.avif'
+import County151 from '../assets/sites/County151.webp'
+import Dasnac72 from '../assets/sites/Dasnac72.jpg'
+import DasnacWest from '../assets/sites/DasnacWest.jpg'
+import GoldCityAli from '../assets/sites/GoldCityAli.webp'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -24,6 +31,15 @@ const itemVariants = {
 }
 
 export default function Home() {
+  const sliderImages = [
+    BhuAst,
+    BhuCityCen,
+    County151,
+    Dasnac72,
+    DasnacWest,
+    GoldCityAli,
+  ]
+
   return (
     <section className="page home">
       {/* Hero Section */}
@@ -40,22 +56,8 @@ export default function Home() {
             <button className="btn ghost-outline">Browse Properties</button>
           </div>
         </div>
-        <div className="hero-image img-placeholder" aria-hidden="true">
-          <svg viewBox="0 0 400 300" className="placeholder-svg" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{stopColor:'#e0e7ff',stopOpacity:1}} />
-                <stop offset="100%" style={{stopColor:'#dcfce7',stopOpacity:1}} />
-              </linearGradient>
-            </defs>
-            <rect width="400" height="300" fill="url(#grad1)"/>
-            <rect x="50" y="80" width="120" height="140" fill="#cbd5e1" rx="8"/>
-            <rect x="180" y="60" width="140" height="160" fill="#cbd5e1" rx="8"/>
-            <rect x="330" y="100" width="40" height="120" fill="#22c55e" rx="4" opacity="0.8"/>
-            <circle cx="70" cy="250" r="12" fill="#22c55e"/>
-            <circle cx="210" cy="270" r="10" fill="#22c55e"/>
-            <circle cx="340" cy="260" r="8" fill="#22c55e"/>
-          </svg>
+        <div className="hero-image">
+          <ImageSlider images={sliderImages} />
         </div>
       </motion.section>
 
@@ -163,19 +165,7 @@ export default function Home() {
             {properties.filter(p => p.type === 'commercial').slice(0, 3).map((p) => (
               <motion.article key={p.id} className="card" variants={itemVariants}>
                 <div className="img-placeholder card-image">
-                  <svg viewBox="0 0 300 200" className="placeholder-svg" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                      <linearGradient id={`propGrad${p.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{stopColor:'#fef3c7',stopOpacity:1}} />
-                        <stop offset="100%" style={{stopColor:'#f0fdf4',stopOpacity:1}} />
-                      </linearGradient>
-                    </defs>
-                    <rect width="300" height="200" fill={`url(#propGrad${p.id})`}/>
-                    <rect x="20" y="20" width="80" height="140" fill="#cbd5e1" rx="2"/>
-                    <rect x="110" y="10" width="90" height="160" fill="#cbd5e1" rx="2"/>
-                    <rect x="210" y="40" width="70" height="120" fill="#cbd5e1" rx="2"/>
-                    <circle cx="150" cy="170" r="5" fill="#22c55e"/>
-                  </svg>
+                  <img src={p.img} alt="N/A" />
                 </div>
                 <div className="card-body">
                   <h3>{p.title}</h3>
@@ -210,20 +200,7 @@ export default function Home() {
             {properties.filter(p => p.type === 'residential').slice(0, 3).map((p) => (
               <motion.article key={p.id} className="card" variants={itemVariants}>
                 <div className="img-placeholder card-image">
-                  <svg viewBox="0 0 300 200" className="placeholder-svg" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                      <linearGradient id={`propGrad${p.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{stopColor:'#e0e7ff',stopOpacity:1}} />
-                        <stop offset="100%" style={{stopColor:'#dcfce7',stopOpacity:1}} />
-                      </linearGradient>
-                    </defs>
-                    <rect width="300" height="200" fill={`url(#propGrad${p.id})`}/>
-                    <polygon points="150,30 250,120 250,180 50,180 50,120" fill="#cbd5e1"/>
-                    <rect x="80" y="120" width="50" height="60" fill="#94a3b8"/>
-                    <rect x="170" y="120" width="50" height="60" fill="#94a3b8"/>
-                    <circle cx="105" cy="135" r="4" fill="#64748b"/>
-                    <circle cx="125" cy="135" r="4" fill="#64748b"/>
-                  </svg>
+                  <img src={p.img} alt="N/A" />
                 </div>
                 <div className="card-body">
                   <h3>{p.title}</h3>

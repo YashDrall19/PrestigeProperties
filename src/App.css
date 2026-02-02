@@ -188,6 +188,7 @@ body{
 .img-placeholder.medium{height:200px}
 .img-placeholder.small{height:120px}
 .card-image{height:200px;background:var(--light-bg)}
+.card-image img{object-fit: cover; width: 100%; height: 100%;}
 
 
 

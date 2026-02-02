@@ -1,3 +1,17 @@
+import Bhu32 from "../assets/sites/BhuCityCen32.avif";
+import BhuAst from "../assets/sites/BhuAst.jpeg";
+import M3M72 from "../assets/sites/M3M72.webp";
+import M3MJewel from "../assets/sites/M3MJewel.webp";
+import Dasnac72 from "../assets/sites/Dasnac72.jpg";
+import VVIP from "../assets/sites/VVIP.webp";
+import County151 from "../assets/sites/County151.webp";
+import RGGroup from "../assets/sites/RGGroup.jpeg";
+import Sobha from "../assets/sites/Sobha.jpeg";
+import M3M37 from "../assets/sites/M3M37.jpeg";
+import DasnacWest from "../assets/sites/DasnacWest.jpg";
+import JimCor from "../assets/sites/JimCor.avif";
+import GoldCityAli from "../assets/sites/GoldCityAli.webp";
+
 const properties = [
   // Commercial Projects
   {
@@ -9,7 +23,7 @@ const properties = [
     price: '₹25 Crore+',
     roi: '12-15% p.a',
     description: 'Premium commercial space in the heart of Noida',
-    img: 'commercial-1'
+    img: Bhu32
   },
   {
     id: '2',
@@ -20,7 +34,7 @@ const properties = [
     price: '₹20 Crore+',
     roi: '11-14% p.a',
     description: 'State-of-the-art commercial complex with modern amenities',
-    img: 'commercial-2'
+    img: BhuAst
   },
   {
     id: '3',
@@ -31,7 +45,7 @@ const properties = [
     price: '₹30 Crore+',
     roi: '13-16% p.a',
     description: 'Prime commercial corridor with high footfall',
-    img: 'commercial-3'
+    img: M3M72
   },
   {
     id: '4',
@@ -42,7 +56,7 @@ const properties = [
     price: '₹18 Crore+',
     roi: '12-15% p.a',
     description: 'Luxury commercial development with premium finishes',
-    img: 'commercial-4'
+    img: M3MJewel
   },
   {
     id: '5',
@@ -53,7 +67,7 @@ const properties = [
     price: '₹22 Crore+',
     roi: '11-14% p.a',
     description: 'Advanced commercial infrastructure with IT-enabled facilities',
-    img: 'commercial-5'
+    img: Dasnac72
   },
 
   // Residential Projects
@@ -68,7 +82,7 @@ const properties = [
     price: '₹1.5 - 3.5 Crore',
     roi: '8-11% p.a',
     description: 'Ultra-luxury residential complex with world-class amenities',
-    img: 'residential-1'
+    img: VVIP
   },
   {
     id: '7',
@@ -81,7 +95,7 @@ const properties = [
     price: '₹1.2 - 2.8 Crore',
     roi: '8-10% p.a',
     description: 'Gated community with extensive recreational facilities',
-    img: 'residential-2'
+    img: County151
   },
   {
     id: '8',
@@ -94,7 +108,7 @@ const properties = [
     price: '₹80 Lac - 1.8 Crore',
     roi: '7-9% p.a',
     description: 'Contemporary living spaces with modern infrastructure',
-    img: 'residential-3'
+    img: RGGroup
   },
   {
     id: '9',
@@ -107,7 +121,7 @@ const properties = [
     price: '₹1.3 - 3.2 Crore',
     roi: '9-12% p.a',
     description: 'Premium residential developer with pan-India presence',
-    img: 'residential-4'
+    img: Sobha
   },
   {
     id: '10',
@@ -120,7 +134,7 @@ const properties = [
     price: '₹1.6 - 2.9 Crore',
     roi: '9-11% p.a',
     description: 'Iconic luxury residential development with signature design',
-    img: 'residential-5'
+    img: M3M37
   },
   {
     id: '11',
@@ -133,7 +147,7 @@ const properties = [
     price: '₹90 Lac - 2.2 Crore',
     roi: '8-10% p.a',
     description: 'Premium residential township with clubhouse facilities',
-    img: 'residential-6'
+    img: DasnacWest
   },
   {
     id: '12',
@@ -146,7 +160,7 @@ const properties = [
     price: '₹60 Lac - 1.2 Crore',
     roi: '7-9% p.a',
     description: 'Luxury cottages in nature with premium amenities and forest views',
-    img: 'residential-7'
+    img: JimCor
   },
   {
     id: '13',
@@ -159,7 +173,7 @@ const properties = [
     price: '₹45 Lac - 1 Crore',
     roi: '6-8% p.a',
     description: 'Affordable luxury residential community on Aligarh Highway',
-    img: 'residential-8'
+    img: GoldCityAli
   }
 ]
 
