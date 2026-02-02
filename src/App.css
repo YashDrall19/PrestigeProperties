@@ -12,7 +12,7 @@
 }
 
 *{box-sizing:border-box}
-html, body, #root{height:100%;margin:0;padding:0;background:#ffffff;overflow-x:hidden}
+html, body, #root{height:100%;margin:0;padding:0;background:#ffffff;overflow-x:hidden;width: 100vw;}
 body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background:#ffffff;
@@ -38,7 +38,9 @@ body{
 .site-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 24px;background:var(--surface);border-bottom:1px solid #e2e8f0}
 .header-content{display:flex;align-items:center;justify-content:space-between;width:100%;gap:20px}
 .logo-brand{font-weight:700;font-size:1.3rem;color:var(--primary);min-width:80px}
-.menu-btn{display:none;background:transparent;border:1px solid #e5e7eb;padding:8px 12px;border-radius:6px;cursor:pointer}
+.menu-btn{display:none;background:transparent;border:1px solid #e5e7eb;padding:8px 12px;border-radius:6px;cursor:pointer;align-items:center;justify-content:center}
+.menu-icon{display:block;color:var(--text);width:20px;height:16px}
+.menu-btn:focus{outline:none;box-shadow:0 0 0 3px rgba(100,108,255,0.15)}
 .header-nav{display:flex;gap:24px;flex:1;margin-left:40px}
 .header-nav a{text-decoration:none;color:var(--text);font-size:0.95rem;transition:color .2s}
 .header-nav a:hover, .header-nav a.active{color:var(--primary);font-weight:600}

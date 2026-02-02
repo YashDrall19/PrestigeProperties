@@ -9,7 +9,7 @@ export default function Properties(){
   return (
     <section className="page properties">
       <h1>Properties</h1>
-      <div className="filter-bar">
+      {/* <div className="filter-bar">
         <input placeholder="Search by city, locality or id" />
         <select>
           <option>Any</option>
@@ -17,7 +17,7 @@ export default function Properties(){
           <option>Sell</option>
         </select>
         <button className="btn primary">Search</button>
-      </div>
+      </div> */}
 
       <div className="cards-grid">
         {properties.map((p)=> (

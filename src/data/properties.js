@@ -2,7 +2,7 @@ const properties = [
   // Commercial Projects
   {
     id: '1',
-    title: 'Bhutani Cyberpark - Center 32',
+    title: 'Bhutani City Center 32',
     type: 'commercial',
     location: 'Noida, Uttar Pradesh',
     area: '50,000 - 100,000 sq ft',
