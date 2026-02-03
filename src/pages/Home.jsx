@@ -52,9 +52,9 @@ export default function Home() {
         <div className="hero-content">
           <h1>Premium Real Estate Investment Opportunities</h1>
           <p>Discover premium commercial and residential properties across India. Build wealth through smart, curated real estate investments with transparent returns and expert guidance.</p>
-          <div className="hero-ctas">
+          {/* <div className="hero-ctas">
             <button className="btn ghost-outline">Browse Properties</button>
-          </div>
+          </div> */}
         </div>
         <div className="hero-image">
           <ImageSlider images={sliderImages} />
