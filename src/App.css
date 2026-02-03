@@ -234,14 +234,14 @@ body{
 }
 
 @media (max-width: 768px){
-  .page{padding: 20px 20px;}
-  .home{padding-top: 35px;}
+  .page{padding: 20px 0px;}  
   .sidebar{display:block;z-index: 100;}
   .sidebar-close{display:block}
   .menu-btn{display:inline-flex}
   .header-content{flex-wrap:wrap}
   .header-nav{display:none;margin:0}
   .logo-brand{flex-grow:1}
+  .logo-image{width: 50px;}
   .content{padding:24px 16px}
   .hero-section h1{font-size:1.8rem}
   .stat-value{font-size:1.6rem}
@@ -296,7 +296,7 @@ body{
 .service-link:hover{color:var(--primary-dark)}
 
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-bottom:80px}
-.service-card{background:var(--surface);border:1px solid #334155;border-radius:12px;padding:32px;text-align:center;transition:all .3s;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.service-card{background:var(--surface);border:1px solid #334155;border-radius:12px;padding:10px;text-align:center;transition:all .3s;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
 .service-card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(59,130,246,0.2);border-color:var(--primary)}
 .service-icon{font-size:3rem;margin-bottom:16px}
 .service-card h3{font-size:1.4rem;font-weight:600;margin:16px 0;color:var(--text)}
@@ -323,7 +323,7 @@ body{
 .services-cta p{color:rgba(255,255,255,0.9);margin-bottom:32px;font-size:1.1rem}
 
 @media (max-width: 1200px){
-  .service-detail{grid-template-columns:1fr;gap:40px;padding:32px}
+  .service-detail{display: flex;flex-direction: column;gap: 40px;}
   .service-detail.right .detail-icon{order:1}
   .service-detail.right .detail-content{order:2}
   .detail-icon{height:300px}
