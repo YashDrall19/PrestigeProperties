@@ -12,6 +12,14 @@ import DasnacWest from "../assets/sites/DasnacWest.jpg";
 import JimCor from "../assets/sites/JimCor.avif";
 import GoldCityAli from "../assets/sites/GoldCityAli.webp";
 
+// m3m slides
+import M3MJacob1 from "../assets/series/M3MJacob/M3MJacob1.jpeg";
+import M3MJacob2 from "../assets/series/M3MJacob/M3MJacob2.jpeg";
+import M3MJacob3 from "../assets/series/M3MJacob/M3MJacob3.jpeg";
+import M3MJacob4 from "../assets/series/M3MJacob/M3MJacob4.jpeg";
+import M3MJacob5 from "../assets/series/M3MJacob/M3MJacob5.jpeg";
+import M3MJacob6 from "../assets/series/M3MJacob/M3MJacob6.jpeg";
+
 const properties = [
   // Commercial Projects
   {
@@ -134,7 +142,8 @@ const properties = [
     price: '₹1.6 - 2.9 Crore',
     roi: '9-11% p.a',
     description: 'Iconic luxury residential development with signature design',
-    img: M3M37
+    img: M3M37,
+    slides: [M3MJacob1, M3MJacob2, M3MJacob3, M3MJacob4, M3MJacob5, M3MJacob6]
   },
   {
     id: '11',

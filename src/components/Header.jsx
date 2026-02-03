@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import logo from "../assets/logot.png";
 
 export default function Header({ onMenu }) {
+
   return (
     <header className="site-header">
       <div className="header-content">
