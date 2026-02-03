@@ -234,6 +234,7 @@ body{
 }
 
 @media (max-width: 768px){
+  .site-header{padding: 4px 40px;}
   .page{padding: 20px 0px;}  
   .sidebar{display:block;z-index: 100;}
   .sidebar-close{display:block}
