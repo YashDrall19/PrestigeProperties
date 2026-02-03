@@ -1,6 +1,15 @@
+import { useEffect } from "react";
+
 export default function Vastu(){
+
+  useEffect(() => {
+    const section = document.getElementById("vastu");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
-    <section className="page vastu">
+    <section className="page vastu" id="vastu">
       <h1>Vastu Consultation</h1>
       <div className="section">
         <div className="img-placeholder large" aria-hidden="true"></div>

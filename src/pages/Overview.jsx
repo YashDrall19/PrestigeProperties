@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+
 export default function Overview(){
+  useEffect(() => {
+    const section = document.getElementById("overview");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
   return (
-    <section className="page overview">
+    <section className="page overview" id="overview">
       <h1>Overview</h1>
       <div className="section two-cols">
         <div>

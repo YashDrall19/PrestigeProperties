@@ -63,19 +63,17 @@ export default function ImageSlider({ images }) {
     }
   }
 
+  // Use opacity transitions only; CSS handles the slow zoom-in effect
   const slideVariants = {
-    enter: (dir) => ({
-      x: dir > 0 ? 1000 : -1000,
+    enter: () => ({
       opacity: 0,
     }),
     center: {
       zIndex: 1,
-      x: 0,
       opacity: 1,
     },
-    exit: (dir) => ({
+    exit: () => ({
       zIndex: 0,
-      x: dir > 0 ? -1000 : 1000,
       opacity: 0,
     }),
   }
@@ -96,10 +94,7 @@ export default function ImageSlider({ images }) {
           initial="enter"
           animate="center"
           exit="exit"
-          transition={{
-            x: { type: 'spring', stiffness: 300, damping: 30 },
-            opacity: { duration: 0.05 },
-          }}
+          transition={{ opacity: { duration: 0.6 } }}
           className="slider-image"
         />
       </AnimatePresence>

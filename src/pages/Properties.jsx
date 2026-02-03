@@ -37,7 +37,6 @@ export default function Properties(){
               <p className="muted">{p.beds} bed • {p.baths} bath • {p.size}</p>
               <div className="card-actions">
                 <Link to={`/properties/${p.id}`} className="btn primary small">View</Link>
-                <button className="btn ghost small" onClick={()=>setQuick({open:true, prop:p})}>Quick View</button>
               </div>
             </div>
           </article>

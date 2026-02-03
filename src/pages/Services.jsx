@@ -61,10 +61,10 @@ export default function Services(){
               <p className="service-desc">{service.description}</p>
               <ul className="service-features">
                 {service.details.slice(0, 3).map((detail, idx) => (
-                  <li key={idx}> {detail}</li>
+                  <li key={idx}>✔ {detail}</li>
                 ))}
               </ul>
-              <button className="btn primary small">Learn More</button>
+              {/* <button className="btn primary small">Learn More</button> */}
             </motion.div>
           ))}
         </motion.div>
@@ -96,7 +96,7 @@ export default function Services(){
                     ))}
                   </ul>
                 </div>
-                <button className="btn primary">Get Started</button>
+                {/* <button className="btn primary">Get Started</button> */}
               </div>
             </motion.div>
           ))}
