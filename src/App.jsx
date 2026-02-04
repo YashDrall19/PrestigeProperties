@@ -12,6 +12,7 @@ import PropertyDetail from './pages/PropertyDetail'
 import Vastu from './pages/Vastu'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import { MdWhatsapp } from 'react-icons/md'
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -70,7 +71,14 @@ function AppContent() {
         </Routes>
       </main>
 
-      <Footer />
+      <div style={{marginTop: "60px"}}>
+        <Footer />
+      </div>
+
+
+      <div>
+        <MdWhatsapp color='green' />
+      </div>
     </div>
   )
 }
