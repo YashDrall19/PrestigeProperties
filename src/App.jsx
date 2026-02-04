@@ -12,12 +12,14 @@ import PropertyDetail from './pages/PropertyDetail'
 import Vastu from './pages/Vastu'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import { MdWhatsapp } from 'react-icons/md'
+import { FaWhatsapp } from 'react-icons/fa'
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
   const scrollPositions = new Map()
+  const whatsappUrl = `https://wa.me/${"917082661109"}?text=${encodeURIComponent("Hi, I’m interested in one of the properties listed on your website. Can you please assist?")}`;
+
 
   useEffect(() => {
     // Save current scroll position before navigating
@@ -74,10 +76,11 @@ function AppContent() {
       <div style={{marginTop: "60px"}}>
         <Footer />
       </div>
-
-
-      <div>
-        <MdWhatsapp color='green' />
+      <div 
+        className="whatsapp-button"
+        onClick={() => window.open(whatsappUrl, "_blank")}
+      >
+        <FaWhatsapp color='green' size={30} />
       </div>
     </div>
   )

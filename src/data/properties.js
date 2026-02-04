@@ -20,6 +20,63 @@ import M3MJacob4 from "../assets/series/M3MJacob/M3MJacob4.jpeg";
 import M3MJacob5 from "../assets/series/M3MJacob/M3MJacob5.jpeg";
 import M3MJacob6 from "../assets/series/M3MJacob/M3MJacob6.jpeg";
 
+import M3MJewel1 from "../assets/series/M3MJewel/M3MJEwel1.jpeg";
+import M3MJewel2 from "../assets/series/M3MJewel/M3MJEwel2.jpeg";
+import M3MJewel3 from "../assets/series/M3MJewel/M3MJEwel3.jpeg";
+import M3MJewel4 from "../assets/series/M3MJewel/M3MJEwel4.jpeg";
+
+import M3MLine1 from "../assets/series/M3MLine/M3MLine1.png";
+import M3MLine2 from "../assets/series/M3MLine/M3MLine2.png";
+import M3MLine3 from "../assets/series/M3MLine/M3MLine3.png";
+import M3MLine4 from "../assets/series/M3MLine/M3MLine4.png";
+import M3MLine5 from "../assets/series/M3MLine/M3MLine5.png";
+import M3MLine6 from "../assets/series/M3MLine/M3MLine6.png";
+import M3MLine7 from "../assets/series/M3MLine/M3MLine7.png";
+import M3MLine8 from "../assets/series/M3MLine/M3MLine8.png";
+import M3MLine9 from "../assets/series/M3MLine/M3MLine9.png";
+import M3MLine10 from "../assets/series/M3MLine/M3MLine10.png";
+import M3MLine11 from "../assets/series/M3MLine/M3MLine11.png";
+import M3MLine12 from "../assets/series/M3MLine/M3MLine12.png";
+import M3MLine13 from "../assets/series/M3MLine/M3MLine13.png";
+import M3MLine14 from "../assets/series/M3MLine/M3MLine14.png";
+import M3MLine15 from "../assets/series/M3MLine/M3MLine15.png";
+import M3MLine16 from "../assets/series/M3MLine/M3MLine5.png";
+
+
+
+//dasnac slides
+import DasnacWest1 from "../assets/series/DasnacWest/DasnacWest1.png";
+import DasnacWest2 from "../assets/series/DasnacWest/DasnacWest2.png";
+import DasnacWest3 from "../assets/series/DasnacWest/DasnacWest3.png";
+import DasnacWest4 from "../assets/series/DasnacWest/DasnacWest4.png";
+import DasnacWest5 from "../assets/series/DasnacWest/DasnacWest5.png";
+import DasnacWest6 from "../assets/series/DasnacWest/DasnacWest6.png";
+import DasnacWest7 from "../assets/series/DasnacWest/DasnacWest7.png";
+import DasnacWest8 from "../assets/series/DasnacWest/DasnacWest8.png";
+import DasnacWest9 from "../assets/series/DasnacWest/DasnacWest9.png";
+import DasnacWest10 from "../assets/series/DasnacWest/DasnacWest10.png";
+import DasnacWest11 from "../assets/series/DasnacWest/DasnacWest11.png";
+
+import DasnacArc1 from "../assets/series/DasnacArc/DasnacArc1.png";
+import DasnacArc2 from "../assets/series/DasnacArc/DasnacArc2.png";
+import DasnacArc3 from "../assets/series/DasnacArc/DasnacArc3.png";
+import DasnacArc4 from "../assets/series/DasnacArc/DasnacArc4.png";
+import DasnacArc5 from "../assets/series/DasnacArc/DasnacArc5.png";
+import DasnacArc6 from "../assets/series/DasnacArc/DasnacArc6.png";
+import DasnacArc7 from "../assets/series/DasnacArc/DasnacArc7.png";
+import DasnacArc8 from "../assets/series/DasnacArc/DasnacArc8.png";
+import DasnacArc9 from "../assets/series/DasnacArc/DasnacArc9.png";
+import DasnacArc10 from "../assets/series/DasnacArc/DasnacArc10.png";
+import DasnacArc11 from "../assets/series/DasnacArc/DasnacArc11.png";
+
+
+// jim slides
+import Jim1 from "../assets/series/Jim/Jim1.jpeg";
+import Jim2 from "../assets/series/Jim/Jim2.jpeg";
+import Jim3 from "../assets/series/Jim/Jim3.jpeg";
+import Jim4 from "../assets/series/Jim/Jim4.jpeg";
+
+
 const properties = [
   // Commercial Projects
   {
@@ -53,7 +110,8 @@ const properties = [
     price: '₹30 Crore+',
     roi: '13-16% p.a',
     description: 'Prime commercial corridor with high footfall',
-    img: M3M72
+    img: M3M72,
+    slides: [M3MLine1, M3MLine2, M3MLine3, M3MLine4, M3MLine5, M3MLine6, M3MLine7, M3MLine8, M3MLine9, M3MLine10, M3MLine11, M3MLine12, M3MLine13, M3MLine14, M3MLine15, M3MLine16]
   },
   {
     id: '4',
@@ -64,7 +122,8 @@ const properties = [
     price: '₹18 Crore+',
     roi: '12-15% p.a',
     description: 'Luxury commercial development with premium finishes',
-    img: M3MJewel
+    img: M3MJewel,
+    slides: [M3MJewel1, M3MJewel2, M3MJewel3, M3MJewel4]
   },
   {
     id: '5',
@@ -75,7 +134,8 @@ const properties = [
     price: '₹22 Crore+',
     roi: '11-14% p.a',
     description: 'Advanced commercial infrastructure with IT-enabled facilities',
-    img: Dasnac72
+    img: Dasnac72,
+    slides: [DasnacArc1, DasnacArc2, DasnacArc3, DasnacArc4, DasnacArc5, DasnacArc6, DasnacArc7, DasnacArc8, DasnacArc9, DasnacArc10, DasnacArc11]
   },
 
   // Residential Projects
@@ -156,7 +216,8 @@ const properties = [
     price: '₹90 Lac - 2.2 Crore',
     roi: '8-10% p.a',
     description: 'Premium residential township with clubhouse facilities',
-    img: DasnacWest
+    img: DasnacWest,
+    slides: [DasnacWest1, DasnacWest2, DasnacWest3, DasnacWest4, DasnacWest5, DasnacWest6, DasnacWest7, DasnacWest8, DasnacWest9, DasnacWest10, DasnacWest11]
   },
   {
     id: '12',
@@ -169,7 +230,8 @@ const properties = [
     price: '₹60 Lac - 1.2 Crore',
     roi: '7-9% p.a',
     description: 'Luxury cottages in nature with premium amenities and forest views',
-    img: JimCor
+    img: JimCor,
+    slides: [Jim1, Jim2, Jim3, Jim4]
   },
   {
     id: '13',

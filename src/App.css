@@ -48,6 +48,11 @@
 .app-link{color: var(--primary); cursor: pointer;}
 .app-link:hover{text-decoration: underline;}
 
+.loan-container{display: flex;justify-content: center;}
+.loan-form-section{width:50%;min-width:0}
+.loan-form{display:flex;flex-direction:column}
+
+
 @media (max-width: 1200px){
   .contact-container{grid-template-columns:1fr;gap:40px}
   .form-group-row{grid-template-columns:1fr}
@@ -117,7 +122,7 @@ body{
 
 .main-area{display:flex;flex-direction:column}
 .site-header{padding:4px 80px;background:var(--surface);border-bottom:1px solid #334155;position:fixed;top:0;left:0;right:0;z-index:50;transition:padding .3s ease, height .3s ease;width:100%;box-sizing:border-box;height:auto}
-.site-header.collapsed{padding:12px 80px}
+.site-header.collapsed{padding:20px 80px}
 .site-header.collapsed .logo-image{width:0;overflow:hidden;opacity:0}
 .header-content{display:flex;align-items:center;justify-content:space-between;width:100%;gap:20px}
 .logo-image{width: 100px; height: 100%;}
@@ -221,6 +226,7 @@ body{
 
 /* Page Container */
 .page{padding:0px 80px;background:#0f172a;width:100%}
+.whatsapp-button{position:fixed;bottom:40px;right:60px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.3);cursor:pointer;z-index:100}
 
 @media (max-width: 1200px){
   .hero-section, .investment-card-section{gap:24px;grid-template-columns:1fr}
@@ -253,22 +259,29 @@ body{
   .stat-value{font-size:1.6rem}
   .stats-section{grid-template-columns:repeat(2,1fr);gap:16px;padding:24px 0}
   .features-grid, .cards-grid, .steps-grid, .footer-content{grid-template-columns:1fr}
+  
+  .feature-icon{height:50px;width:50px;font-size:2rem;}
+  .feature-item{padding:20px;}
+  .feature-item h4{font-size: 0.8rem;}
+  .feature-item p{font-size: 0.7rem;}
   .investment-card-section{padding:24px 0}
   .card-image{height:160px}
+  .whatsapp-button{bottom:3vh;right:8vw;width: 40px;height: 40px;}
 }
 
 @media (max-width: 480px){
   .content{padding:16px}
   .header-ctas{flex-wrap:wrap;gap:8px}
   .btn{padding:8px 12px;font-size:0.85rem}
-  .hero-section{gap:8px}
-  .hero-section h1{font-size:1.4rem;margin-bottom:12px}
+  .hero-section{padding: 0;position: relative;}
+  .hero-section h1{font-size:1.4rem;margin-bottom:8px}
   .hero-section p{font-size:0.9rem}
   .hero-ctas{flex-direction:column}
-  .hero-image{height:280px}
-  .hero-content{padding:20px 0 0 0;position:static;background:transparent}
+  .hero-image{height:450px;position: relative}
+  .hero-content {position: absolute;bottom: 0;left: 0;width: 100%;background: rgba(0, 0, 0, 0.5);color: #fff;padding: 16px;box-sizing: border-box;}
   .stat-label{font-size:0.75rem}
   .footer-content{grid-template-columns:1fr;gap:24px}
+  .features-section h2{font-size: 1.5rem;}
 }
 
 /* interactions and modal */
@@ -286,6 +299,8 @@ body{
 .img-placeholder.small{height:120px}
 .card-image{height:200px;background:var(--light-bg)}
 .card-image img{object-fit: cover; width: 100%; height: 100%;}
+
+.properties h1{text-align: center;color: var(--primary);}
 
 /* Services Section */
 .services-hero{text-align:center;margin-bottom:60px;}
@@ -345,6 +360,11 @@ body{
   .detail-icon{height:250px}
   .detail-content h2{font-size:1.4rem}
   .services-cta{padding:40px 20px}
+  .services-showcase-grid{display: flex;flex-direction: column;}
+  .services-showcase-grid h4{font-size:0.8rem;margin-bottom:8px}
+  .services-showcase-grid p{font-size:0.7rem;margin-bottom:8px}
+  .card-image{height:150px}
+  .card-body{padding:0px 12px 6px 12px}
 }
 
 /* SVG Placeholders */

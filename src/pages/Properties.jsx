@@ -7,11 +7,11 @@ export default function Properties(){
   const [quick, setQuick] = useState({open:false, prop:null})
 
   useEffect(() => {
-      const section = document.getElementById("property");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }, []);
+    const section = document.getElementById("property");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <section className="page properties" id='property'>

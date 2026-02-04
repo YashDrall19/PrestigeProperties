@@ -10,6 +10,8 @@ import County151 from '../assets/sites/County151.webp'
 import Dasnac72 from '../assets/sites/Dasnac72.jpg'
 import DasnacWest from '../assets/sites/DasnacWest.jpg'
 import GoldCityAli from '../assets/sites/GoldCityAli.webp'
+import { MdWhatsapp } from 'react-icons/md'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -162,7 +164,7 @@ export default function Home() {
             {properties.filter(p => p.type === 'commercial').slice(0, 3).map((p) => (
               <motion.article key={p.id} className="card" variants={itemVariants}>
                 <div className="img-placeholder card-image">
-                  <img src={p.img} alt="N/A" />
+                  <img src={p.img} alt="N/A" style={{objectFit:"cover"}} />
                 </div>
                 <div className="card-body">
                   <h3>{p.title}</h3>
@@ -277,10 +279,9 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {[
+            {[{ stat: '4-6%', label: 'Residential Average Annual ROI' },
               { stat: '13', label: 'Premium Properties' },
-              { stat: '8-16%', label: 'Average Annual ROI' },
-              { stat: '10K+', label: 'Active Investors' },
+              { stat: '6-8%', label: 'Commercial Average Annual ROI' },
             ].map((item, i) => (
               <motion.div key={i} className="trust-stat-large" variants={itemVariants}>
                 <p>{item.stat}</p>
