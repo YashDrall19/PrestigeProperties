@@ -51,6 +51,7 @@ export default function PropertyDetail() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 768,

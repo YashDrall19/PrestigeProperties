@@ -10,7 +10,7 @@ import Sobha from "../assets/sites/Sobha.jpeg";
 import M3M37 from "../assets/sites/M3M37.jpeg";
 import DasnacWest from "../assets/sites/DasnacWest.jpg";
 import JimCor from "../assets/sites/JimCor.avif";
-import GoldCityAli from "../assets/sites/GoldCityAli.webp";
+import GoldCity3 from "../assets/sites/GoldCity2.png";
 
 // m3m slides
 import M3MJacob1 from "../assets/series/M3MJacob/M3MJacob1.jpeg";
@@ -75,6 +75,11 @@ import Jim1 from "../assets/series/Jim/Jim1.jpeg";
 import Jim2 from "../assets/series/Jim/Jim2.jpeg";
 import Jim3 from "../assets/series/Jim/Jim3.jpeg";
 import Jim4 from "../assets/series/Jim/Jim4.jpeg";
+
+
+// golden city slides
+import GoldCity1 from "../assets/series/GoldenCity/GoldCity1.png";
+import GoldCity2 from "../assets/series/GoldenCity/GoldCity2.png";
 
 
 const properties = [
@@ -244,7 +249,8 @@ const properties = [
     price: '₹45 Lac - 1 Crore',
     roi: '6-8% p.a',
     description: 'Affordable luxury residential community on Aligarh Highway',
-    img: GoldCityAli
+    img: GoldCity3,
+    series: [GoldCity3, GoldCity1, GoldCity2]
   }
 ]
 
