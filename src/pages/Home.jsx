@@ -5,11 +5,14 @@ import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
 import ImageSlider from '../components/ImageSlider'
 import BhuAst from '../assets/sites/BhuAst.jpeg'
-import BhuCityCen from '../assets/sites/BhuCityCen32.avif'
+import BhuCityCen from '../assets/sites/Bhu32.webp'
 import County151 from '../assets/sites/County151.webp'
 import Dasnac72 from '../assets/sites/Dasnac72.jpg'
 import DasnacWest from '../assets/sites/DasnacWest.jpg'
-import GoldCityAli from '../assets/sites/GoldCityAli.webp'
+import GoldCity1 from '../assets/sites/GoldCity1.png'
+import JimCor from "../assets/sites/JimCor.avif";
+import M3M37 from "../assets/sites/M3M37.jpeg"
+import M3M72 from "../assets/sites/M3M72.webp"
 import { MdWhatsapp } from 'react-icons/md'
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -34,12 +37,12 @@ const itemVariants = {
 
 export default function Home() {
   const sliderImages = [
-    BhuAst,
-    BhuCityCen,
-    County151,
-    Dasnac72,
     DasnacWest,
-    GoldCityAli,
+    M3M72,
+    Dasnac72,
+    GoldCity1,
+    BhuAst,
+    JimCor,
   ]
 
   return (

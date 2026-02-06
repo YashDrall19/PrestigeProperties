@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { countries } from '../data/countries'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
+import emailjs from "@emailjs/browser";
 
 export default function Contact(){
 
@@ -19,7 +20,8 @@ export default function Contact(){
     country: 'India',
     countryCode: '+91',
     interest: 'Real Estate Buy & Sell',
-    message: ''
+    message: '',
+    email: ""
   });
 
   const handleCountryChange = (e) => {
@@ -43,16 +45,28 @@ export default function Contact(){
     e.preventDefault()
     console.log('Form submitted:', formData)
     // Add your form submission logic here
-    alert(`Thank you ${formData.name}! We'll contact you soon on ${formData.countryCode}${formData.phone}`);
+    emailjs
+      .sendForm(
+        "service_t8n0qd8",
+        "template_4ahpglo",
+        e.target,
+        "CbSSZ2WEvdeZj4SDS"
+      ).then(() => {
+      alert("Message sent successfully ✅");
+    })
+    .catch(() => {
+      alert("Failed to send message ❌");
+    });
     setFormData({
       name: '',
       phone: '',
       country: 'India',
       countryCode: '+91',
       interest: 'Real Estate Buy & Sell',
-      message: ''
+      message: '',
+      email: ""
     });
-  }
+  };
 
   return (
     <section className="page contact" id='contact'>
@@ -63,7 +77,7 @@ export default function Contact(){
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>Book Your Consultation</h1>
+        <h1>BOOK YOUR CONSULTATION</h1>
         <p>Get in touch with our real estate experts. Fill out the form and we'll contact you within 24 hours.</p>
       </motion.div>
 
@@ -125,6 +139,23 @@ export default function Contact(){
                         id="phone"
                         name="phone"
                         value={formData.phone}
+                        onChange={handleInputChange}
+                        placeholder="9876543210"
+                        required
+                        className="form-input"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="phone">Email *</label>
+                    <div className="phone-input-wrapper">
+                      {/* <span className="country-code">{formData.countryCode}</span> */}
+                      <input 
+                        type="email" 
+                        id="email"
+                        name="email"
+                        value={formData.email}
                         onChange={handleInputChange}
                         placeholder="9876543210"
                         required

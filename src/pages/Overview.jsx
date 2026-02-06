@@ -9,7 +9,7 @@ export default function Overview(){
   }, []);
   return (
     <section className="page overview" id="overview">
-      <h1>Overview</h1>
+      <h1>OVERVIEW</h1>
       <div className="section two-cols">
         <div>
           <p>Our agency connects buyers and sellers with transparent listings and trusted agents.</p>

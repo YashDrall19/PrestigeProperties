@@ -258,8 +258,8 @@ body{
   .hero-content{padding:20px 24px;position:static;background:transparent}
   .stat-value{font-size:1.6rem}
   .stats-section{grid-template-columns:repeat(2,1fr);gap:16px;padding:24px 0}
-  .features-grid, .cards-grid, .steps-grid, .footer-content{grid-template-columns:1fr}
-  
+  .features-grid, .cards-grid, .steps-grid, .footer-content{grid-template-columns:1fr 1fr}
+  .cards-grid .muted{display: none;}
   .feature-icon{height:50px;width:50px;font-size:2rem;}
   .feature-item{padding:20px;}
   .feature-item h4{font-size: 0.8rem;}
@@ -363,8 +363,11 @@ body{
   .services-showcase-grid{display: flex;flex-direction: column;}
   .services-showcase-grid h4{font-size:0.8rem;margin-bottom:8px}
   .services-showcase-grid p{font-size:0.7rem;margin-bottom:8px}
-  .card-image{height:150px}
+  .card-image{height:120px}
   .card-body{padding:0px 12px 6px 12px}
+  .card-body h3{font-size:1rem;margin:8px 0 4px 0}
+  .properties h1{font-size:2rem}
+  .property-detail{font-size: 0.7rem;}
 }
 
 /* SVG Placeholders */

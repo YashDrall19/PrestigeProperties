@@ -15,7 +15,7 @@ export default function Properties(){
 
   return (
     <section className="page properties" id='property'>
-      <h1>Properties</h1>
+      <h1>PROPERTIES</h1>
       {/* <div className="filter-bar">
         <input placeholder="Search by city, locality or id" />
         <select>

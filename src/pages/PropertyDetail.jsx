@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { FaLocationDot } from 'react-icons/fa6';
 
 export default function PropertyDetail() {
   const { id } = useParams()
@@ -64,7 +65,7 @@ export default function PropertyDetail() {
 
   return (
     <section className="page property-detail" id="property">
-      <h1>{p.title}</h1>
+      <h1 style={{textTransform: "uppercase"}}>{p.title}</h1>
 
       <div className="section two-cols">
         <div style={{padding: "0px 20px"}}>
@@ -87,10 +88,10 @@ export default function PropertyDetail() {
             ))}
           </Slider>
 
-          <p className="muted">{p.location} • {p.size}</p>
-          <p><strong>{p.price}</strong></p>
-          <p>Bedrooms: {p.beds} • Bathrooms: {p.baths}</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="muted"><FaLocationDot color='red' /> {p.location}</p>
+          <div>
+            {p.description}
+          </div>
         </div>
 
         <aside>

@@ -62,7 +62,7 @@ export default function Services(){
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>Our Services</h1>
+        <h1>OUR SERVICES</h1>
         <p>Comprehensive real estate and lifestyle solutions tailored to your needs</p>
       </motion.div>
 
