@@ -864,7 +864,7 @@ const properties = [
     price: '₹45 Lac - 1 Crore',
     roi: '6-8% p.a',
     img: GoldCity1,
-    series: [GoldCity1, GoldCity2, GoldCity3],
+    slides: [GoldCity1, GoldCity2, GoldCity3],
     description: (
       <div>
         <h3>A Future-Ready Township Near Jewar Airport</h3>
