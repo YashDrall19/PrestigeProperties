@@ -140,7 +140,9 @@ const properties = [
       </div>
     ),
     img: Bhu32,
-    slides: [Bhu1, Bhu2, Bhu3, Bhu4, Bhu5, Bhu6]
+    slides: [Bhu1, Bhu2, Bhu3, Bhu4, Bhu5, Bhu6],
+    coordinates: [28.573909773153215, 77.35346029400226],
+    href: "https://maps.app.goo.gl/VnxfyftmaKX89KE78"
   },
   {
     id: '2',
@@ -175,7 +177,9 @@ const properties = [
         </ul> 
         <p>Astrathum isn’t just a development—it’s a dynamic urban experience where work, life, and leisure converge seamlessly.</p> 
       </div>
-    )
+    ),
+    coordinates: [28.592312036970984, 77.46142649585603],
+    href: "https://maps.app.goo.gl/h1GQALgVi7NXv8HF8"
   },
   {
     id: '3',
@@ -224,13 +228,15 @@ const properties = [
         </ul> 
         <p><strong>M3M The Line Avenue</strong> isn’t just a development—it’s a lifestyle destination where urban living, premium retail, and modern amenities come together to create an iconic experience.</p> 
       </div>
-    )
+    ),
+    coordinates: [28.580534683963453, 77.37784853818331],
+    href: "https://maps.app.goo.gl/2evZbxD5yDsy3fuC8"
   },
   {
     id: '4',
     title: 'M3M Jewel Crest',
     type: 'commercial',
-    location: 'Sector 97, Noida, Uttar Pradesh-201301',
+    location: 'Sector 97, Noida, Uttar Pradesh-201304',
     area: '30,000 - 70,000 sq ft',
     price: '₹18 Crore+',
     roi: '12-15% p.a',
@@ -289,8 +295,9 @@ const properties = [
           design excellence, and contemporary luxury.
         </p>
       </div>
-
-    )
+    ),
+    coordinates: [28.479497144884398, 77.07656229585209],
+    href: "https://maps.app.goo.gl/pAjzeXCp5QuMeQBN7"
   },
   {
     id: '5',
@@ -302,7 +309,9 @@ const properties = [
     roi: '11-14% p.a',
     description: 'Advanced commercial infrastructure with IT-enabled facilities',
     img: Dasnac72,
-    slides: [DasnacArc1, DasnacArc2, DasnacArc3, DasnacArc4, DasnacArc5, DasnacArc6, DasnacArc7, DasnacArc8, DasnacArc9, DasnacArc10, DasnacArc11]
+    slides: [DasnacArc1, DasnacArc2, DasnacArc3, DasnacArc4, DasnacArc5, DasnacArc6, DasnacArc7, DasnacArc8, DasnacArc9, DasnacArc10, DasnacArc11],
+    coordinates: [28.583017334425353, 77.37671817879537],
+    href: "https://maps.app.goo.gl/EmFLVGvFnp8T2RSh8"
   },
 
   // Residential Projects
@@ -327,11 +336,13 @@ const properties = [
         <p>Residents can indulge in a wide range of premium amenities designed to enrich daily life. From a fully equipped fitness center and swimming pool to a stylish clubhouse and indoor and outdoor recreational spaces, every facility is curated to promote wellness, leisure, and community living.</p> 
         <p><strong>VVIP Addresses</strong> isn’t just a place to live—it’s an address that defines luxury, comfort, and distinction.</p> 
       </div>
-    )
+    ),
+    coordinates: [28.562590000083627, 77.48510777476115],
+    href: "https://maps.app.goo.gl/6c3hq8sJyWdoDTnt7"
   },
   {
     id: '7',
-    title: 'County Sector 151',
+    title: 'Clove County',
     type: 'residential',
     location: 'Sector 151, Noida, Uttar Pradesh-201310',
     beds: '3-4',
@@ -416,7 +427,9 @@ const properties = [
         </ul> 
         <p>With renowned schools, universities, IT parks, and business hubs nearby, <strong>Clove County Sector 151 Noida</strong> ensures a lifestyle defined by ease, elegance, and future-ready living.</p> 
       </div>
-    )
+    ),
+    coordinates: [28.447446097077208, 77.46380838726355],
+    href: "https://maps.app.goo.gl/c5WVbfNrK5NGSnFR9"
   },
   // {
   //   id: '8',
@@ -576,8 +589,9 @@ const properties = [
           a truly comfortable place to call home.
         </p>
       </div>
-
-    )
+    ),
+    coordinates: [28.560960490988926, 77.44064717238773],
+    href: "https://maps.app.goo.gl/g9gAb4Q2ukU7PSML6"
   },
   // {
   //   id: '9',
@@ -680,7 +694,9 @@ const properties = [
           <li>Greater Noida IT Hub – approx. 30 minutes</li>
         </ul>
       </div>
-    )
+    ),
+    coordinates: [28.57609655915664, 77.43059906424966],
+    href: "https://maps.app.goo.gl/XvQLRcDYGFVZYG6k7"
   },
   {
     id: '10',
@@ -751,10 +767,10 @@ const properties = [
           collectible works of architecture, created for those who value exclusivity,
           refinement, and iconic luxury.
         </p>
-
       </div>
-
-    )
+    ),
+    coordinates: [28.536227101171306, 77.35518336701789],
+    href: "https://maps.app.goo.gl/ggvBb6Eok3Xjwuig7"
   },
   {
     id: '11',
@@ -836,14 +852,15 @@ const properties = [
           <li>Open views of riverfront and green landscapes</li>
         </ul>
       </div>
-
-    )
+    ),
+    coordinates: [28.466649937234905, 77.45885084693388],
+    href: "https://maps.app.goo.gl/N7sx5dHgRnnnnd8W7"
   },
   {
     id: '12',
     title: 'Jim Corbett Cottage',
     type: 'residential',
-    location: 'Uttarakhand',
+    location: 'National Park, Jhirna Gate, Dhela Rd, opposite Jim Corbett, Ramnagar, Dhela, Uttarakhand-244715',
     beds: '2-3',
     baths: '2',
     area: '1,200 - 1,800 sq ft',
@@ -851,7 +868,9 @@ const properties = [
     roi: '7-9% p.a',
     description: 'Luxury cottages in nature with premium amenities and forest views',
     img: JimCor,
-    slides: [Jim1, Jim2, Jim3, Jim4]
+    slides: [Jim1, Jim2, Jim3, Jim4],
+    coordinates: [29.421851365453513, 78.99630206704921],
+    href: "https://maps.app.goo.gl/tPmsGEApiY55fMEA7"
   },
   {
     id: '13',
@@ -914,7 +933,9 @@ const properties = [
           and long-term value creation.
         </p>
       </div>
-    )
+    ),
+    coordinates: [27.971775865220497, 77.77066424340333],
+    href: "https://maps.app.goo.gl/NJLKj672KfJ7ZApV6"
   }
 ]
 

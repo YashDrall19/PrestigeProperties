@@ -56,6 +56,20 @@ function AppContent() {
     }
   }, [location.pathname])
 
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //     // alert("Right-click disabled!");
+  //   };
+
+  //   document.addEventListener("contextmenu", handleContextMenu);
+
+  //   // Clean up event listener
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //   };
+  // }, []);
+
   return (
     <div className="app-root">
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
