@@ -15,7 +15,7 @@ export default function Properties(){
 
   return (
     <section className="page properties" id='property'>
-      <h1>PROPERTIES</h1>
+      <h1>OUR LISTINGS</h1>
       {/* <div className="filter-bar">
         <input placeholder="Search by city, locality or id" />
         <select>
@@ -34,7 +34,7 @@ export default function Properties(){
             </div>
             <div className="card-body">
               <h3>{p.title}</h3>
-              <p className="muted">{p.beds} bed • {p.baths} bath • {p.size}</p>
+              <p className="muted">{p.location}</p>
               <div className="card-actions">
                 <Link to={`/properties/${p.id}`} className="btn primary small">View</Link>
               </div>

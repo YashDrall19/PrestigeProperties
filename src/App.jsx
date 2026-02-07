@@ -13,6 +13,7 @@ import Vastu from './pages/Vastu'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import { FaWhatsapp } from 'react-icons/fa'
+import LoanCalculator from './pages/LoanCalculator'
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -70,6 +71,7 @@ function AppContent() {
           <Route path="/vastu" element={<Vastu />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/loan-calculator" element={<LoanCalculator />} />
         </Routes>
       </main>
 
@@ -80,7 +82,7 @@ function AppContent() {
         className="whatsapp-button"
         onClick={() => window.open(whatsappUrl, "_blank")}
       >
-        <FaWhatsapp color='green' size={30} />
+        <FaWhatsapp color='green' className='whatsapp-icon' />
       </div>
     </div>
   )

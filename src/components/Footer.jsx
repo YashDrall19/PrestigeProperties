@@ -1,4 +1,8 @@
+import { NavLink, useLocation } from "react-router-dom";
+
 export default function Footer() {
+  const location = useLocation();
+  console.log(location.pathname === "/")
   const openEmail = () => {
     const email = "kamal@prestige-properties.co";
     const subject = "Real Estate Inquiry";
@@ -30,20 +34,21 @@ export default function Footer() {
         <div className="footer-section">
           <h5>Quick Links</h5>
           <ul>
-            <li><a href="#home">Properties</a></li>
-            <li><a href="#about">Blog</a></li>
-            <li><a href="#services">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>{location.pathname !== "/" && <NavLink to="/">Home</NavLink>}</li>
+            <li><NavLink to="/properties">Properties</NavLink></li>
+            <li><NavLink to="/services">Services</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/loan-calculator">Loan Calculator</NavLink></li>
           </ul>
         </div>
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <h5>Legal</h5>
           <ul>
             <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="#terms">Terms of Service</a></li>
             <li><a href="#cookies">Cookie Policy</a></li>
           </ul>
-        </div>
+        </div> */}
         <div className="footer-section">
         <h5>Contact</h5>
         <p>

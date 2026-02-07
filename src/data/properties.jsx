@@ -5,8 +5,8 @@ import M3MJewel from "../assets/sites/M3MJewel.webp";
 import Dasnac72 from "../assets/sites/Dasnac72.jpg";
 import VVIP from "../assets/sites/VVIP.webp";
 import County151 from "../assets/sites/County151.webp";
-import RGGroup from "../assets/sites/RGGroup.jpeg";
-import Sobha from "../assets/sites/Sobha.jpeg";
+import RG1 from "../assets/sites/RG1.jpeg";
+import Sobha1 from "../assets/sites/Sobha1.webp";
 import M3M37 from "../assets/sites/M3M37.jpeg";
 import DasnacWest from "../assets/sites/DasnacWest.jpg";
 import JimCor from "../assets/sites/JimCor.avif";
@@ -82,11 +82,9 @@ import GoldCity2 from "../assets/series/GoldenCity/GoldCity2.png";
 import GoldCity3 from "../assets/series/GoldenCity/GoldCity3.png";
 
 // sobha slides
-import Sobha1 from "../assets/series/Sobha/Sobha1.webp";
 import Sobha2 from "../assets/series/Sobha/Sobha2.webp";
-import Sobha3 from "../assets/series/Sobha/Sobha3.webp";
+import Sobha3 from "../assets/series/Sobha/Sobha3.jpg";
 import Sobha4 from "../assets/series/Sobha/Sobha4.webp";
-import Sobha5 from "../assets/series/Sobha/Sobha5.webp";
 
 
 // VVIP slides
@@ -100,8 +98,9 @@ import VVIP7 from "../assets/series/VVIP/VVIP7.webp";
 
 
 // RG SLIDES
-import RG1 from "../assets/series/RG/RG1.webp";
 import RG2 from "../assets/series/RG/RG2.jpg";
+import RG3 from "../assets/series/RG/RG3.jpg";
+import RG4 from "../assets/series/RG/RG4.jpg";
 
 // county slides
 import County1 from "../assets/series/County/County1.jpg";
@@ -180,7 +179,7 @@ const properties = [
   },
   {
     id: '3',
-    title: 'M3M Line - Sector 72',
+    title: 'M3M - The Line',
     type: 'commercial',
     location: 'Sector 72, Noida, Uttar Pradesh-201301',
     area: '60,000 - 120,000 sq ft',
@@ -235,7 +234,6 @@ const properties = [
     area: '30,000 - 70,000 sq ft',
     price: '₹18 Crore+',
     roi: '12-15% p.a',
-    description: 'Luxury commercial development with premium finishes',
     img: M3MJewel,
     slides: [M3MJewel1, M3MJewel2, M3MJewel3, M3MJewel4],
     description: (
@@ -420,85 +418,269 @@ const properties = [
       </div>
     )
   },
+  // {
+  //   id: '8',
+  //   title: 'RG Group Residences',
+  //   type: 'residential',
+  //   location: 'Sector 120, Noida, Uttar Pradesh-201301',
+  //   beds: '2-3',
+  //   baths: '2',
+  //   area: '900 - 1,500 sq ft',
+  //   price: '₹80 Lac - 1.8 Crore',
+  //   roi: '7-9% p.a',
+  //   img: RGGroup,
+  //   slides: [RGGroup, RG2, RG1],
+  //   description: (
+  //     <div> 
+  //       <p><strong>RG Residency, Sector 120 Noida:</strong> Elevated Living in a Green, Connected Community</p> 
+  //       <p>RG Residency is a well-established high-rise residential development located in <strong>Sector 120, Noida</strong>. Spread across nearly <strong>13 acres</strong>, the project stands out as Noida’s first landscaped podium-style residential complex, thoughtfully designed with close to <strong>70% open and green spaces</strong>. The layout promotes a balance of urban convenience and open, breathable living.</p> 
+  //       <p>The society offers a wide range of residential options, including smartly planned apartments and premium penthouses, making it suitable for end-users as well as long-term investors.</p> 
+  //       <h2>Project Overview</h2> 
+  //       <ul> 
+  //         <li><strong>Configurations:</strong> 1, 2, and 3 BHK apartments along with penthouses</li> 
+  //         <li><strong>Project Status:</strong> Largely ready-to-move, with select newer towers under development</li> 
+  //         <li><strong>Development Scale:</strong> 12 residential towers rising up to 22–26 floors</li> 
+  //         <li><strong>Total Residences:</strong> Approximately 1,500+ units</li> 
+  //       </ul> 
+  //       <p>Some newer phases within the project are currently under construction, with possession timelines extending into mid-2026, adding fresh inventory to this already established community.</p> 
+  //       <h2>Location & Connectivity</h2> 
+  //       <p>RG Residency enjoys a strategic location that ensures smooth connectivity across Noida and the NCR.</p> 
+  //       <ul> 
+  //         <li>Close proximity to the FNG Corridor</li> 
+  //         <li>Approximately 1.5–4 km from Sector 51 and Sector 52 Metro Stations (Blue & Aqua Lines)</li> 
+  //         <li>Around 10 minutes’ drive from Sector 18 and Atta Market</li> 
+  //       </ul> 
+  //       <p>This location advantage makes daily commuting convenient while keeping residents close to commercial hubs, retail zones, and entertainment districts.</p> 
+  //       <h2>Price & Rental Outlook</h2> 
+  //       <p>Property values at RG Residency vary depending on apartment size, floor level, and furnishing. As per recent market trends, the approximate pricing range is:</p> 
+  //       <ul> 
+  //         <li><strong>1 BHK:</strong> Mid-range pricing with strong rental demand from working professionals</li> 
+  //         <li><strong>2 BHK:</strong> Broad price spectrum, suitable for both end-use and investment</li> 
+  //         <li><strong>3 BHK:</strong> Premium segment with higher rental yields and family-oriented demand</li> 
+  //       </ul> 
+  //       <p>The project continues to attract interest due to its location, established infrastructure, and steady rental absorption.</p> 
+  //       <h2>Amenities & Lifestyle Features</h2> 
+  //       <p>RG Residency is designed to offer a complete urban lifestyle with thoughtfully curated amenities for all age groups.</p> 
+  //       <h3>Lifestyle & Leisure</h3> 
+  //       <ul> 
+  //         <li>Landscaped podium gardens</li> 
+  //         <li>Swimming pool and clubhouse</li> 
+  //         <li>Fully equipped gymnasium</li> 
+  //       </ul> 
+  //       <h3>Sports & Recreation</h3> 
+  //       <ul> 
+  //         <li>Skating rink and badminton court</li> 
+  //         <li>Jogging and cycling tracks</li> 
+  //         <li>Children’s play areas</li> 
+  //       </ul> 
+  //       <h3>Convenience & Security</h3> 
+  //       <ul> 
+  //         <li>On-site retail zone (RG Square) with grocery stores, pharmacy, and food outlets</li> 
+  //         <li>Power backup for common areas and residences</li> 
+  //         <li>Multi-layered security with controlled access</li> 
+  //       </ul> 
+  //       <p><strong>RG Residency</strong> offers the advantage of a mature residential ecosystem—combining green spaces, connectivity, and everyday convenience—making it a reliable choice for comfortable living and long-term value.</p> 
+  //     </div>
+  //   )
+  // },
   {
     id: '8',
-    title: 'RG Group Residences',
+    title: 'RG Pleiaddes',
     type: 'residential',
-    location: 'Sector 120, Noida, Uttar Pradesh-201301',
+    location: 'Sector 1, Greater Noida West, Uttar Pradesh-201301',
     beds: '2-3',
     baths: '2',
     area: '900 - 1,500 sq ft',
     price: '₹80 Lac - 1.8 Crore',
     roi: '7-9% p.a',
-    description: 'Contemporary living spaces with modern infrastructure',
-    img: RGGroup,
-    slides: [RGGroup, RG2, RG1],
+    img: RG1,
+    slides: [RG1, RG2, RG3, RG4],
     description: (
-      <div> 
-        <p><strong>RG Residency, Sector 120 Noida:</strong> Elevated Living in a Green, Connected Community</p> 
-        <p>RG Residency is a well-established high-rise residential development located in <strong>Sector 120, Noida</strong>. Spread across nearly <strong>13 acres</strong>, the project stands out as Noida’s first landscaped podium-style residential complex, thoughtfully designed with close to <strong>70% open and green spaces</strong>. The layout promotes a balance of urban convenience and open, breathable living.</p> 
-        <p>The society offers a wide range of residential options, including smartly planned apartments and premium penthouses, making it suitable for end-users as well as long-term investors.</p> 
-        <h2>Project Overview</h2> 
-        <ul> 
-          <li><strong>Configurations:</strong> 1, 2, and 3 BHK apartments along with penthouses</li> 
-          <li><strong>Project Status:</strong> Largely ready-to-move, with select newer towers under development</li> 
-          <li><strong>Development Scale:</strong> 12 residential towers rising up to 22–26 floors</li> 
-          <li><strong>Total Residences:</strong> Approximately 1,500+ units</li> 
-        </ul> 
-        <p>Some newer phases within the project are currently under construction, with possession timelines extending into mid-2026, adding fresh inventory to this already established community.</p> 
-        <h2>Location & Connectivity</h2> 
-        <p>RG Residency enjoys a strategic location that ensures smooth connectivity across Noida and the NCR.</p> 
-        <ul> 
-          <li>Close proximity to the FNG Corridor</li> 
-          <li>Approximately 1.5–4 km from Sector 51 and Sector 52 Metro Stations (Blue & Aqua Lines)</li> 
-          <li>Around 10 minutes’ drive from Sector 18 and Atta Market</li> 
-        </ul> 
-        <p>This location advantage makes daily commuting convenient while keeping residents close to commercial hubs, retail zones, and entertainment districts.</p> 
-        <h2>Price & Rental Outlook</h2> 
-        <p>Property values at RG Residency vary depending on apartment size, floor level, and furnishing. As per recent market trends, the approximate pricing range is:</p> 
-        <ul> 
-          <li><strong>1 BHK:</strong> Mid-range pricing with strong rental demand from working professionals</li> 
-          <li><strong>2 BHK:</strong> Broad price spectrum, suitable for both end-use and investment</li> 
-          <li><strong>3 BHK:</strong> Premium segment with higher rental yields and family-oriented demand</li> 
-        </ul> 
-        <p>The project continues to attract interest due to its location, established infrastructure, and steady rental absorption.</p> 
-        <h2>Amenities & Lifestyle Features</h2> 
-        <p>RG Residency is designed to offer a complete urban lifestyle with thoughtfully curated amenities for all age groups.</p> 
-        <h3>Lifestyle & Leisure</h3> 
-        <ul> 
-          <li>Landscaped podium gardens</li> 
-          <li>Swimming pool and clubhouse</li> 
-          <li>Fully equipped gymnasium</li> 
-        </ul> 
-        <h3>Sports & Recreation</h3> 
-        <ul> 
-          <li>Skating rink and badminton court</li> 
-          <li>Jogging and cycling tracks</li> 
-          <li>Children’s play areas</li> 
-        </ul> 
-        <h3>Convenience & Security</h3> 
-        <ul> 
-          <li>On-site retail zone (RG Square) with grocery stores, pharmacy, and food outlets</li> 
-          <li>Power backup for common areas and residences</li> 
-          <li>Multi-layered security with controlled access</li> 
-        </ul> 
-        <p><strong>RG Residency</strong> offers the advantage of a mature residential ecosystem—combining green spaces, connectivity, and everyday convenience—making it a reliable choice for comfortable living and long-term value.</p> 
+      <div>
+        <h2>RG Pleiaddes</h2>
+        <h3>A Calm, Well-Planned Address for Modern Living</h3>
+
+        <p>
+          Located in the peaceful surroundings of <strong>Sector 1, Greater Noida West</strong>,
+          RG Pleiades is a thoughtfully planned residential community by the trusted
+          <strong>RG Group</strong>. Designed for families who value space, comfort, and
+          everyday convenience, the project offers a refined living environment away
+          from city chaos—yet close to everything that matters.
+        </p>
+
+        <p>
+          The development features carefully crafted <strong>3 &amp; 4 BHK premium residences</strong>,
+          created to offer generous layouts, abundant natural light, and excellent ventilation.
+          With its corner, three-side open planning, each home feels airy, private, and
+          connected to nature.
+        </p>
+
+        <p>
+          RG Pleiades focuses on delivering not just homes, but a balanced lifestyle.
+          From quality construction using advanced aluminum formwork technology to
+          thoughtfully designed common spaces, every detail reflects durability,
+          safety, and long-term value. The project is <strong>RERA compliant</strong>,
+          ensuring transparency and peace of mind for homebuyers.
+        </p>
+
+        <h2>Architecture &amp; Project Highlights</h2>
+        <ul>
+          <li>Six elegantly designed standalone towers with impressive floor heights</li>
+          <li>Grand double-height entrance lobbies with reception areas in each tower</li>
+          <li>Low-density layout with only 8 apartments per floor</li>
+          <li>High-speed passenger lifts along with dedicated fire &amp; service lifts</li>
+          <li>Advanced fire safety systems including modern sprinklers</li>
+          <li>Precision construction using aluminum formwork for enhanced strength</li>
+        </ul>
+
+        <h2>Green Spaces &amp; Community Planning</h2>
+        <ul>
+          <li>Over 70% of the project area dedicated to landscaped open spaces</li>
+          <li>Well-planned guest parking close to every tower</li>
+          <li>Separate drop-off zones for smooth traffic movement</li>
+          <li>Three-side open layout ensuring sunlight and cross ventilation</li>
+        </ul>
+
+        <h2>Clubhouse, Wellness &amp; Recreation</h2>
+        <ul>
+          <li>Expansive <strong>50,000 sq. ft.</strong> clubhouse designed for all age groups</li>
+          <li>Indoor and outdoor temperature-controlled swimming pools</li>
+          <li>Fully equipped gym, spa, sauna, and wellness facilities</li>
+          <li>Dedicated yoga and meditation zones</li>
+          <li>Banquet hall suitable for social gatherings and celebrations</li>
+          <li>Business center and senior citizen lounge</li>
+          <li>Restaurant and café with comfortable seating</li>
+          <li>Bowling alley, karaoke room, and AV entertainment lounge</li>
+          <li>Indoor squash and badminton courts</li>
+          <li>Golf simulator and exclusive kids’ activity zones</li>
+        </ul>
+
+        <h2>Location Advantages</h2>
+        <p>
+          RG Pleiades enjoys a strategic location that offers both serenity and excellent
+          connectivity to major urban hubs.
+        </p>
+
+        <ul>
+          <li>Just a short drive to Noida city</li>
+          <li>Easy access to major expressways</li>
+          <li>Well-connected to reputed schools and healthcare facilities</li>
+          <li>Close proximity to shopping centers and daily conveniences</li>
+          <li>Smooth connectivity to Greater Noida and surrounding areas</li>
+        </ul>
+
+        <p>
+          <strong>RG Pleiades</strong> is ideal for homebuyers seeking a secure, spacious,
+          and lifestyle-oriented residential community—where quality construction,
+          thoughtful amenities, and a peaceful environment come together to create
+          a truly comfortable place to call home.
+        </p>
       </div>
+
     )
   },
+  // {
+  //   id: '9',
+  //   title: 'Sobha Realty',
+  //   type: 'residential',
+  //   location: 'Sector 36, Greater Noida, Uttar Pradesh-201310',
+  //   beds: '2-4',
+  //   baths: '2-3',
+  //   area: '1,100 - 2,400 sq ft',
+  //   price: '₹1.3 - 3.2 Crore',
+  //   roi: '9-12% p.a',
+  //   description: 'Premium residential developer with pan-India presence',
+  //   img: Sobha,
+  //   slides: [Sobha1, Sobha2, Sobha3, Sobha4, Sobha5]
+  // },
   {
     id: '9',
-    title: 'Sobha Realty',
+    title: 'Sobha Rivana',
     type: 'residential',
-    location: 'Sector 36, Greater Noida, Uttar Pradesh-201310',
+    location: 'Sector 1, Greater Noida West, Uttar Pradesh-201310',
     beds: '2-4',
     baths: '2-3',
     area: '1,100 - 2,400 sq ft',
     price: '₹1.3 - 3.2 Crore',
     roi: '9-12% p.a',
-    description: 'Premium residential developer with pan-India presence',
-    img: Sobha,
-    slides: [Sobha1, Sobha2, Sobha3, Sobha4, Sobha5]
+    img: Sobha1,
+    slides: [Sobha1, Sobha2, Sobha3, Sobha4],
+    description: (
+      <div className="project-content">
+        <h2>Sobha Sector 1, Greater Noida West</h2>
+        <h3>Luxury Living Designed for the Future</h3>
+
+        <p>
+          Sobha Sector 1 in <strong>Greater Noida West</strong> presents a refined
+          residential address for homebuyers seeking quality, comfort, and long-term
+          value. Developed by <strong>Sobha Limited</strong>, this thoughtfully planned
+          community spans over <strong>12 acres</strong> and features{" "}
+          <strong>eight premium high-rise towers</strong> set amidst open green spaces.
+        </p>
+
+        <p>
+          The project offers spacious <strong>2, 3, and 4 BHK luxury apartments</strong>,
+          with well-designed layouts ranging from approximately{" "}
+          <strong>1,300 sq. ft. to 2,600 sq. ft.</strong>. Every residence reflects Sobha’s
+          hallmark craftsmanship, efficient space utilization, and attention to detail.
+          The development is <strong>RERA compliant</strong>, with an expected possession
+          timeline of <strong>December 2029</strong>.
+        </p>
+
+        <p>
+          A major highlight of Sobha Sector 1 is its strategic location. The project
+          enjoys excellent connectivity to the{" "}
+          <strong>Noida–Greater Noida Expressway</strong>,{" "}
+          <strong>FNG Corridor</strong>, and the upcoming{" "}
+          <strong>metro corridor</strong>, along with future access to{" "}
+          <strong>Jewar International Airport</strong>. Located around{" "}
+          <strong>12 km from Noida</strong> and <strong>29 km from Delhi</strong>, it is
+          close to established social and commercial infrastructure such as{" "}
+          <strong>Fortis Hospital, DPS schools, Gaur Chowk</strong>, and key business hubs.
+        </p>
+
+        <p>
+          Planned as a <strong>low-density residential community</strong> with only{" "}
+          <strong>1,375 homes</strong>, the project ensures privacy, openness, and a
+          peaceful living environment. Residents benefit from a wide range of lifestyle
+          amenities including a modern clubhouse, infinity-edge swimming pool, spa and
+          wellness zones, gymnasium, yoga decks, children’s play areas, and landscaped
+          gardens.
+        </p>
+
+        <p>
+          Supported by the rapid growth of Greater Noida West and Sobha Limited’s proven
+          delivery track record, Sobha Sector 1 stands out as a future-ready residential
+          destination with strong appreciation potential.
+        </p>
+
+        <h2>Project Highlights – Sobha Rivana</h2>
+        <ul>
+          <li>Eight premium towers offering elegant high-rise living</li>
+          <li>Low-density planning with only 1,375 exclusive residences</li>
+          <li>Spacious and thoughtfully designed 2, 3 &amp; 4 BHK homes</li>
+          <li>Excellent connectivity to expressways, metro, and Jewar Airport</li>
+          <li>World-class amenities focused on wellness and recreation</li>
+          <li>Clubhouse, sports facilities, spa, and wellness zones</li>
+          <li>Sustainable, eco-friendly, and green-certified development</li>
+        </ul>
+
+        <h2>Location Advantages</h2>
+        <p>
+          Sobha Sector 1 offers seamless access to key destinations, making everyday
+          commuting convenient and stress-free.
+        </p>
+
+        <ul>
+          <li>Fortis Hospital – approx. 25 minutes</li>
+          <li>DPS Greater Noida West – approx. 10 minutes</li>
+          <li>Sector 132–137 Corporate Belt – approx. 25 minutes</li>
+          <li>Gaur City Mall – approx. 10 minutes</li>
+          <li>Noida Sector 62 – approx. 20 minutes</li>
+          <li>Greater Noida IT Hub – approx. 30 minutes</li>
+        </ul>
+      </div>
+    )
   },
   {
     id: '10',
@@ -584,7 +766,6 @@ const properties = [
     area: '1,000 - 1,800 sq ft',
     price: '₹90 Lac - 2.2 Crore',
     roi: '8-10% p.a',
-    description: 'Premium residential township with clubhouse facilities',
     img: DasnacWest,
     slides: [DasnacWest1, DasnacWest2, DasnacWest3, DasnacWest4, DasnacWest5, DasnacWest6, DasnacWest7, DasnacWest8, DasnacWest9, DasnacWest10, DasnacWest11],
     description: (
@@ -682,7 +863,6 @@ const properties = [
     area: '800 - 1,500 sq ft',
     price: '₹45 Lac - 1 Crore',
     roi: '6-8% p.a',
-    description: 'Affordable luxury residential community on Aligarh Highway',
     img: GoldCity1,
     series: [GoldCity1, GoldCity2, GoldCity3],
     description: (

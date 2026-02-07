@@ -89,8 +89,13 @@ export default function Home() {
       {/* Investment Card Section */}
       <ScrollReveal delay={0.1}>
         <section className="investment-card-section">
+          <h1>Why Choose Prestige Properties?</h1>
+          <p>
+            At Prestige Properties, we go beyond just selling real estate—we create opportunities for a better lifestyle and smart investment. Our curated selection of premium residential and commercial spaces combines luxury, quality, and thoughtful design with prime, high-growth locations.
+            Every property is chosen for its long-term appreciation potential and exclusivity, allowing you to secure your future, elevate your lifestyle, and invest with confidence. With us, finding your dream home or a profitable commercial space is simple, transparent, and rewarding.
+          </p>
           
-          <div className="investment-right">
+          {/* <div className="investment-right">
             <div className="card property-card-featured">
               <div className="card-label">Featured</div>
               <div className="img-placeholder card-image">
@@ -119,7 +124,7 @@ export default function Home() {
           <div className="investment-left">
             <h2>Why Choose Prestige Properties?</h2>
             <p>We specialize in curating premium real estate investments across commercial and residential sectors. Our properties are strategically located in high-growth regions with proven appreciation potential.</p>
-          </div>
+          </div> */}
         </section>
       </ScrollReveal>
 
@@ -206,10 +211,10 @@ export default function Home() {
                 <div className="card-body">
                   <h3>{p.title}</h3>
                   <p className="muted">{p.location}</p>
-                  <div className="property-price-row">
+                  {/* <div className="property-price-row">
                     <span className="price">{p.price}</span>
                     <span className="roi">{p.roi}</span>
-                  </div>
+                  </div> */}
                   <div className="card-actions">
                     <Link to={`/properties/${p.id}`} className="btn primary small">View</Link>
                   </div>

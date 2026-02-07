@@ -55,6 +55,7 @@ export default function Header({ onMenu }) {
           <NavLink to="/properties">Properties</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/loan-calculator">Loan Calculator</NavLink>
         </nav>
       </div>
     </header>

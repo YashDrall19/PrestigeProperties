@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import ScrollReveal from '../components/ScrollReveal'
-import { useEffect, useState } from 'react'
-import { countries } from '../data/countries'
+import { useEffect } from 'react'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -32,26 +31,6 @@ export default function Services(){
       section.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
-
-  const [formData, setFormData] = useState({});
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you! We will contact you soon.');
-    setFormData({});
-  };
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-  const handleCountryChange = (e) => {
-    const selectedCountry = countries.find(c => c.name === e.target.value)
-    setFormData({
-      ...formData,
-      country: e.target.value,
-      countryCode: selectedCountry?.code || '+91'
-    })
-  };
 
   return (
     <section className="page services" id='section'>
@@ -89,117 +68,6 @@ export default function Services(){
             </motion.div>
           ))}
         </motion.div>
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <div className="loan-container">
-          {/* Consultation Form */}
-          <motion.div 
-            className="loan-form-section"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="form-card">
-              <h2>Calculate Loan Amount</h2>
-              <p className="form-subtitle">Calculate your loan eligibility and monthly payments</p>
-              
-              <form onSubmit={handleSubmit} className="loan-form">
-                {/* Name Field */}
-                <div className="form-group">
-                  <label htmlFor="name">Full Name *</label>
-                  <input 
-                    type="text" 
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="John Doe"
-                    required
-                    className="form-input"
-                  />
-                </div>
-
-                {/* Phone and Country Code */}
-                {/* <div className="form-group-row"> */}
-                  <div className="form-group">
-                    <label htmlFor="countryCode">Country Code *</label>
-                    <select 
-                      id="countryCode"
-                      name="country"
-                      value={formData.country}
-                      onChange={handleCountryChange}
-                      className="form-select"
-                    >
-                      {countries.map((c) => (
-                        <option key={c.name} value={c.name}>
-                          {c.name} ({c.code})
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="phone">Phone Number *</label>
-                    <div className="phone-input-wrapper">
-                      {/* <span className="country-code">{formData.countryCode}</span> */}
-                      <input 
-                        type="tel" 
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="9876543210"
-                        required
-                        className="form-input"
-                      />
-                    </div>
-                  </div>
-                {/* </div> */}
-
-                {/* Interest Dropdown */}
-                <div className="form-group">
-                  <label htmlFor="interest">Interest *</label>
-                  <select 
-                    id="interest"
-                    name="interest"
-                    value={formData.interest}
-                    onChange={handleInputChange}
-                    className="form-select"
-                  >
-                    {services.map((service) => (
-                      <option key={service.id} value={service.title}>
-                        {service.title}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Message */}
-                <div className="form-group">
-                  <label htmlFor="message">Additional Details (Optional)</label>
-                  <textarea 
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell us more about what you're looking for..."
-                    rows="4"
-                    className="form-textarea"
-                  />
-                </div>
-
-                {/* Submit Button */}
-                <button type="submit" className="btn primary form-submit">
-                  Book Consultation
-                </button>
-
-                <p className="form-note">We respect your privacy. Your information will not be shared.</p>
-              </form>
-            </div>
-          </motion.div>
-        </div>
       </ScrollReveal>
 
       {/* Detailed Services Section */}

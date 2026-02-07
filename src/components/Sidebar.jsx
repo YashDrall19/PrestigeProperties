@@ -13,6 +13,7 @@ export default function Sidebar({ open, onClose }) {
           {/* <NavLink to="/vastu" className={({isActive}) => isActive ? 'active' : ''} onClick={onClose}>Vastu Consult</NavLink> */}
           {/* <NavLink to="/about" className={({isActive}) => isActive ? 'active' : ''} onClick={onClose}>About</NavLink> */}
           <NavLink to="/contact" className={({isActive}) => isActive ? 'active' : ''} onClick={onClose}>Contact</NavLink>
+          <NavLink to="/loan-calculator" className={({isActive}) => isActive ? 'active' : ''} onClick={onClose}>Loan Calculator</NavLink>
         </nav>
         <div className="sidebar-close" onClick={onClose}>✕</div>
       </div>
