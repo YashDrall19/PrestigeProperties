@@ -20,10 +20,10 @@ import M3MJacob4 from "../assets/series/M3MJacob/M3MJacob4.jpeg";
 import M3MJacob5 from "../assets/series/M3MJacob/M3MJacob5.jpeg";
 import M3MJacob6 from "../assets/series/M3MJacob/M3MJacob6.jpeg";
 
-import M3MJewel1 from "../assets/series/M3MJewel/M3MJEwel1.jpeg";
-import M3MJewel2 from "../assets/series/M3MJewel/M3MJEwel2.jpeg";
-import M3MJewel3 from "../assets/series/M3MJewel/M3MJEwel3.jpeg";
-import M3MJewel4 from "../assets/series/M3MJewel/M3MJEwel4.jpeg";
+import M3MJewel1 from "../assets/series/M3MJewel/M3MJewel1.jpeg";
+import M3MJewel2 from "../assets/series/M3MJewel/M3MJewel2.jpeg";
+import M3MJewel3 from "../assets/series/M3MJewel/M3MJewel3.jpeg";
+import M3MJewel4 from "../assets/series/M3MJewel/M3MJewel4.jpeg";
 
 import M3MLine1 from "../assets/series/M3MLine/M3MLine1.png";
 import M3MLine2 from "../assets/series/M3MLine/M3MLine2.png";
