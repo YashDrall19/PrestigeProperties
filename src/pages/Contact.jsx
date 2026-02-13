@@ -68,6 +68,27 @@ export default function Contact(){
     });
   };
 
+
+  const openEmail = () => {
+    const email = "kamal@prestige-properties.co";
+    const subject = "Real Estate Inquiry";
+    const body = "Hello,\n\nI am interested in your real estate services.";
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+    } else {
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+        email
+      )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.open(gmailUrl, "_blank");
+    }
+  };
+
   return (
     <section className="page contact" id='contact'>
       {/* Hero Section */}
@@ -231,15 +252,22 @@ export default function Contact(){
               <div className="office-details">
                 <div className="detail-item">
                   <span className="detail-label">📍 Address:</span>
-                  <p>Sector 72, Noida<br/>Uttar Pradesh 201309</p>
+                  <p>D 208B, Golden I, Tech Zone IV<br/>Greater Noida West, Uttar Pradesh-201318</p>
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">📧 Email:</span>
-                  <p>kamal@prestige-properties.co</p>
+                  <p onClick={openEmail} style={{color: "yellow", textDecoration: "underline", cursor: "pointer"}}>kamal@prestige-properties.co</p>
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">📞 Phone:</span>
-                  <p>+91 9911331082</p>
+                  <p>
+                    <a
+                      href="tel:+919911331082"
+                      style={{color: "yellow", textDecoration: "underline", cursor: "pointer"}}
+                    >
+                      +91 9911331082
+                    </a>
+                  </p>
                 </div>
                 <div className="detail-item">
                   <span className="detail-label">🕐 Hours:</span>
