@@ -19,7 +19,7 @@ function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const location = useLocation()
   const scrollPositions = new Map()
-  const whatsappUrl = `https://wa.me/${"917082661109"}?text=${encodeURIComponent("Hi, I’m interested in one of the properties listed on your website. Can you please assist?")}`;
+  const whatsappUrl = `https://wa.me/${"91911331082"}?text=${encodeURIComponent("Hi, I’m interested in one of the properties listed on your website. Can you please assist?")}`;
 
 
   useEffect(() => {

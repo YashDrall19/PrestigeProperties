@@ -262,7 +262,8 @@ body{
   .hero-content{padding:20px 24px;position:static;background:transparent}
   .stat-value{font-size:1.6rem}
   .stats-section{grid-template-columns:repeat(2,1fr);gap:16px;padding:24px 0}
-  .features-grid, .cards-grid, .steps-grid, .footer-content{grid-template-columns:1fr 1fr}
+  .features-grid, .cards-grid, .footer-content{grid-template-columns:1fr 1fr}
+  .steps-grid{grid-template-columns:1fr}
   .cards-grid .muted{display: none;}
   .feature-icon{height:50px;width:50px;font-size:2rem;}
   .feature-item{padding:20px;}
@@ -272,7 +273,7 @@ body{
   .investment-card-section h1{font-size: 2.2rem;}
   .investment-card-section p{font-size: 0.9rem;}
   .card-image{height:160px}
-  .whatsapp-button{bottom:3vh;right:8vw;width: 40px;height: 40px;}
+  .whatsapp-button{bottom:3vh;right:8vw;width: 40px;height: 40px;scale: 1.5;}
   .whatsapp-icon{font-size:1.5rem}
 }
 
@@ -373,9 +374,10 @@ body{
   .detail-icon{height:250px}
   .detail-content h2{font-size:1.4rem}
   .services-cta{padding:40px 20px}
-  .services-showcase-grid{display: flex;flex-direction: column;}
+  .services-showcase-grid{display: flex;flex-wrap: wrap;justify-content: space-between;}
   .services-showcase-grid h4{font-size:0.8rem;margin-bottom:8px}
   .services-showcase-grid p{font-size:0.7rem;margin-bottom:8px}
+  .service-showcase-item{width: 45%;padding: 2px 4px;}
   .card-image{height:120px}
   .card-body{padding:0px 12px 6px 12px}
   .card-body h3{font-size:1rem;margin:8px 0 4px 0}
