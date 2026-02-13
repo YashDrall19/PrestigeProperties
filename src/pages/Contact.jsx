@@ -45,7 +45,7 @@ export default function Contact(){
     e.preventDefault()
     console.log('Form submitted:', formData)
     // Add your form submission logic here
-    emailjs
+    emailjs 
       .sendForm(
         "service_t8n0qd8",
         "template_4ahpglo",
