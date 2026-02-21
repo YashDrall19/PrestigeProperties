@@ -52,18 +52,20 @@ export default function Contact(){
         import.meta.env.VITE_EMAIL_PUBLIC_KEY
       ).then(() => {
       alert("Message sent successfully ✅");
+      setFormData({
+        name: '',
+        phone: '',
+        country: 'India',
+        countryCode: '+91',
+        interest: 'Real Estate Buy & Sell',
+        message: '',
+        email: ""
+      });
+
+      e.target.reset();
     })
     .catch(() => {
       alert("Failed to send message ❌");
-    });
-    setFormData({
-      name: '',
-      phone: '',
-      country: 'India',
-      countryCode: '+91',
-      interest: 'Real Estate Buy & Sell',
-      message: '',
-      email: ""
     });
   };
 
@@ -97,7 +99,7 @@ export default function Contact(){
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>BOOK YOUR CONSULTATIONS</h1>
+        <h1>BOOK YOUR CONSULTATION</h1>
         <p>Get in touch with our real estate experts. Fill out the form and we'll contact you within 24 hours.</p>
       </motion.div>
 
