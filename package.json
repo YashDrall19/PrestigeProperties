@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "firebase": "^12.9.0",
     "framer-motion": "^12.29.2",
     "leaflet": "^1.9.4",
     "leaflet-color-markers": "^0.1.0",

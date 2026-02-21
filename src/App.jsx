@@ -14,6 +14,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import { FaWhatsapp } from 'react-icons/fa'
 import LoanCalculator from './pages/LoanCalculator'
+import Login from './pages/Login'
+import Dashboard from './pages/Dashboard'
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -105,7 +107,14 @@ function AppContent() {
 function App() {
   return (
     <BrowserRouter>
-      <AppContent />
+      <Routes>
+        {/* Login OUTSIDE layout */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* All other routes inside layout */}
+        <Route path="/*" element={<AppContent />} />
+      </Routes>
     </BrowserRouter>
   )
 }

@@ -151,7 +151,7 @@ body{
 /* Hero Section */
 .hero-section{display:flex;flex-direction:column;gap:16px;align-items:stretch;margin-bottom:60px;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;padding:0}
 .hero-image{width:100%;max-width:100%;height:700px;border-radius:0;overflow:hidden;display:flex;align-items:center;justify-content:center;order:-1}
-.hero-content{position:absolute;bottom:0;left:0;right:0;z-index:10;padding:60px 40px 40px 40px;background:linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(15,23,42,0.9) 50%, rgba(15,23,42,0.95) 100%);max-width:1000px;margin:0 auto;width:100%;box-sizing:border-box}
+.hero-content{position:absolute;bottom:0;left:0;right:0;z-index:10;padding:60px 40px 40px 40px;background:linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(15,23,42,0.9) 50%, rgba(15,23,42,0.95) 100%);text-align: center;margin:0 auto;width:100%;box-sizing:border-box}
 
 /* Stats Section */
 .stats-section{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:60px;padding:40px 0}
@@ -391,3 +391,24 @@ body{
   fill: currentColor;
   opacity: 0.1;
 }
+
+
+
+
+/* =================== login =================== */
+.login{display: flex;justify-content: center;align-items: center;height: 100%;}
+.login-form-card{background:var(--surface);border:1px solid #334155;border-radius:12px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,0.3);width:40%;box-sizing:border-box}
+.login-form-card h2{font-size:1.8rem;font-weight:700;margin:0 0 8px 0;color:var(--primary);text-align: center;margin-bottom: 20px;}
+.password-label{display: flex;justify-content: space-between;}
+.password-label div{cursor: pointer;}
+
+@media (max-width: 1200px) {
+  .login-form-card {width: 80%}
+}
+
+/* =================== dashboard =================== */
+.dash-tabs{padding: 0;list-style: none;display: flex;gap: 50px;border-bottom: 1px solid gray;}
+.dash-tabs li{cursor: pointer;transition: 0.2s ease-in-out;}
+.dash-tabs li:hover{color: #747bff;scale: 1.1;}
+.active-dash-tab{color: #06b6d4;}
+.dash-tabs h3{margin: 0;}

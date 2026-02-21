@@ -43,14 +43,13 @@ export default function Contact(){
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
     // Add your form submission logic here
     emailjs 
       .sendForm(
-        "service_t8n0qd8",
-        "template_4ahpglo",
+        "service_cbm2wf4",
+        "template_oqaoroe",
         e.target,
-        "CbSSZ2WEvdeZj4SDS"
+        "2cvO2pGkdIhdxymd0"
       ).then(() => {
       alert("Message sent successfully ✅");
     })
@@ -98,7 +97,7 @@ export default function Contact(){
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>BOOK YOUR CONSULTATION</h1>
+        <h1>BOOK YOUR CONSULTATIONS</h1>
         <p>Get in touch with our real estate experts. Fill out the form and we'll contact you within 24 hours.</p>
       </motion.div>
 
