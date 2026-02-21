@@ -46,10 +46,10 @@ export default function Contact(){
     // Add your form submission logic here
     emailjs 
       .sendForm(
-        "service_cbm2wf4",
-        "template_oqaoroe",
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         e.target,
-        "2cvO2pGkdIhdxymd0"
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
       ).then(() => {
       alert("Message sent successfully ✅");
     })
