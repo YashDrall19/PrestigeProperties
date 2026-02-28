@@ -140,7 +140,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             {[
-              { icon: '💰', title: 'High Returns', desc: 'Earn 8-16% annual ROI from carefully selected premium properties.' },
+              { icon: '💰', title: 'High Returns', desc: 'Earn 4-8% annual ROI from carefully selected premium properties.' },
               { icon: '🏢', title: 'Diverse Portfolio', desc: 'Choose from commercial or residential investments across India.' },
               { icon: '📊', title: 'Transparent Analytics', desc: 'Track your investments with detailed reports and market insights.' },
               { icon: '👨‍💼', title: 'Expert Guidance', desc: 'Benefit from decades of real estate expertise and market knowledge.' },

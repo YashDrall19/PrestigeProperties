@@ -11,7 +11,7 @@ export default function Header({ onMenu }) {
   useEffect(() => {
     const collapseTimeout = setTimeout(() => {
       setIsCollapsed(true);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(collapseTimeout);
   }, []);
@@ -56,6 +56,7 @@ export default function Header({ onMenu }) {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/loan-calculator">Loan Calculator</NavLink>
+          <NavLink to="/about">About Us</NavLink>
         </nav>
       </div>
     </header>
